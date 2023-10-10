@@ -1,16 +1,18 @@
-# This is a sample Python script.
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# Tipos de datos en Python
+
+# Primer ejercicio de variables y tipos de datos
+x = 10
+print(x)  # 10
+
+# Para saber el tipo de una variable podemos usar el metodo type()
+print(type(x))  # <class 'int'> Nos indica que nuestra variable es de tipo entero
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# Segundo ejercicio de variables y tipos de datos
+y = "Hola a todos!"
+print(y)  # Hola a todos!
 
+print(type(y))  # <class 'str'>
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# Podemos indicar de manera manual
