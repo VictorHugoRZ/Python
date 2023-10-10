@@ -26,6 +26,19 @@ resultado1 = int(input("Ingrese el primer valor: "))
 resultado2 = int(input("Ingrese el segundo valor: "))
 print("El resultado es:", resultado1 + resultado2)
 
-# Ejercicio; ¿Como estuvo tu dia?
+# Ejercicio 1; ¿Como estuvo tu dia?
 miDia = input("¿Como estuvo tu dia? (Del 1 al 10):")
 print("Mi dia estuvo de", miDia)
+
+# Ejercicio 2: Datos de libro y autor
+# Se solicita incluir la siguiente informacion acerca de un libro:
+# Titulo
+# Autor
+# Debes imprimir la informacion en el siguiente formato:
+# Proporciona el titulo:
+# Proporciona al autor:
+# <Titulo> fue escrito por <Autor>
+print("¿Que libro estas leyendo?")
+titulo = input("Escribe el titulo: ")
+autor = input("Escribe el autor: ")
+print("Estoy leyendo", titulo, "y fue escrito por", autor)
