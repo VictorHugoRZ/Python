@@ -1,7 +1,7 @@
 
 # Sentencias de control If/Else
 
-condicion = 'Hola'
+condicion = False
 
 if condicion == True:
     print('Condicion valida')
