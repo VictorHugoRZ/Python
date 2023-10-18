@@ -32,16 +32,16 @@ print(f'El numero proporcionado es {numero}: {numeroTexto}.')
 
 # Uso del Operador Ternario
 
-condicion = True
-
-# Condicionado comun usando sentencias If/Else
-if condicion == True:
-    print('La condicion es verdadera')
-else:
-    print('La condicion es falsa')
-
-# Condicionado con operador ternario
-print('La condicion es verdadera') if condicion else print('La condicion es falsa')
+# condicion = True
+#
+# # Condicionado comun usando sentencias If/Else
+# if condicion == True:
+#     print('La condicion es verdadera')
+# else:
+#     print('La condicion es falsa')
+#
+# # Condicionado con operador ternario
+# print('La condicion es verdadera') if condicion else print('La condicion es falsa')
 
 # Con el operador ternario NO podemos hacer uso de la sentencia ELIF, para esto debemos usar los
 # bloques de codigo If/Elif/Else como comunmente los conocemos
@@ -52,21 +52,44 @@ El usuario proporcionara el numero de mes en el que esta para saber en que estac
 esto proporcionando un numero del 1 al 12.
 '''
 
-print('Mes del año')
-mes = int(input('¿En que mes del año te encuentras? (1-12) '))
-estacion = None  # None es el equivalente a Null en otros lenguajes de programacion
+# print('Mes del año')
+# mes = int(input('¿En que mes del año te encuentras? (1-12) '))
+# estacion = None  # None es el equivalente a Null en otros lenguajes de programacion
+#
+# if mes == 1 or mes == 2 or mes == 12:
+#     estacion = 'Invierno'
+# elif mes == 3 or mes == 4 or mes == 5:
+#     estacion = 'Primavera'
+# elif mes == 6 or mes == 7 or mes == 8:
+#     estacion = 'Verano'
+# elif mes == 9 or mes == 10 or mes == 11:
+#     estacion = 'Otoño'
+# else:
+#     estacion = 'Mes Invalido'
+#
+# print(f'Para el mes {mes}, la estacion correspondiente es: {estacion}')
 
-if mes == 1 or mes == 2 or mes == 12:
-    estacion = 'Invierno'
-elif mes == 3 or mes == 4 or mes == 5:
-    estacion = 'Primavera'
-elif mes == 6 or mes == 7 or mes == 8:
-    estacion = 'Verano'
-elif mes == 9 or mes == 10 or mes == 11:
-    estacion = 'Otoño'
+'''
+Ejercicio Etapas de la Vida:
+El usuario proporcionara numeros en un rango de entre 0 y 30, los cuales evaluaremos para mostrar una respuesta
+en especifico segun el año que nos indiquen
+De 0 a 10 años obtendremos ´La infancia es increible...´
+De 10 a 20 años obtendremos ´Muchos cambios y mucho estudio...´
+De 20 a 30 años obtendremos ´Amor y comienza el trabajo...´
+'''
+
+print('Etapas de la vida')
+edad = int(input('Ingresa tu edad: '))
+etapa = None
+
+if 0 <= edad < 10:
+    etapa = 'La infancia es increible...'
+elif 10 <= edad < 20:
+    etapa = 'Muchos cambios y mucho estudio...'
+elif 20 <= edad <= 30:
+    etapa = 'Amor y comienza el trabajo...'
 else:
-    estacion = 'Mes Invalido'
+    etapa = 'Etapa de la vida no reconocida'
 
-print(f'Para el mes {mes}, la estacion correspondiente es: {estacion}')
-
+print(f'{etapa} tienes {edad} años.')
 
