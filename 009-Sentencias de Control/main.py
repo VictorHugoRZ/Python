@@ -78,18 +78,46 @@ De 10 a 20 años obtendremos ´Muchos cambios y mucho estudio...´
 De 20 a 30 años obtendremos ´Amor y comienza el trabajo...´
 '''
 
-print('Etapas de la vida')
-edad = int(input('Ingresa tu edad: '))
-etapa = None
+# print('Etapas de la vida')
+# edad = int(input('Ingresa tu edad: '))
+# etapa = None
+#
+# if 0 <= edad < 10:
+#     etapa = 'La infancia es increible...'
+# elif 10 <= edad < 20:
+#     etapa = 'Muchos cambios y mucho estudio...'
+# elif 20 <= edad <= 30:
+#     etapa = 'Amor y comienza el trabajo...'
+# else:
+#     etapa = 'Etapa de la vida no reconocida'
+#
+# print(f'{etapa} tienes {edad} años.')
 
-if 0 <= edad < 10:
-    etapa = 'La infancia es increible...'
-elif 10 <= edad < 20:
-    etapa = 'Muchos cambios y mucho estudio...'
-elif 20 <= edad <= 30:
-    etapa = 'Amor y comienza el trabajo...'
+'''
+Ejercicio Sistema de calificaciones:
+El usuario proporcionara un valor entre 0 y 10
+Si esta entre 9 y 10 imprimir la nota A
+Si es igual a 8 imprimir la nota B
+Si es igual a 7 imprimir la nota C
+Si es igual a 6 imprimir la nota D
+Si esta entre 0 y 6 imprimir la nota F
+'''
+
+print('Sistema de calificaciones')
+calificacion = int(input('Ingresa tu calificacion (0-10): '))
+nota = None
+
+if 0 <= calificacion < 6:
+    nota = 'F'
+elif calificacion == 6:
+    nota = 'D'
+elif calificacion == 7:
+    nota = 'C'
+elif calificacion == 8:
+    nota = 'B'
+elif 9 <= calificacion <= 10:
+    nota = 'A'
 else:
-    etapa = 'Etapa de la vida no reconocida'
+    nota = 'No Valida'
 
-print(f'{etapa} tienes {edad} años.')
-
+print(f'Tu calificacion es {nota}')
